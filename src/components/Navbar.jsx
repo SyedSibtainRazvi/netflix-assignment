@@ -16,14 +16,26 @@ const Navbar = () => {
             <div>
 
                 <ul className='text-gray-400 flex '>
-                    <Link to='/'>
-                        <li className='mx-4 hover:text-white'>Home</li>
-                    </Link>
-                    <Link to='movies'>
-                        <li className='mx-4 hover:text-white'>Movies</li>
-                    </Link>
-                    <li className='mx-4 hover:text-white'>Tv Shows</li>
-                    <li className='mx-4 hover:text-white'>Popular</li>
+                    <li className='mx-4 hover:text-white'>
+                        <Link
+                            to='/'
+                        > Home
+                        </Link>
+                    </li>
+                    <li className='mx-4 hover:text-white'>
+                        <Link to='movies'
+                        > Movies
+                        </Link>
+                    </li>
+                    <li className='mx-4 hover:text-white'>
+                        <Link to='tvshow'>
+                        </Link> TV Shows
+                    </li>
+
+                    <li className='mx-4 hover:text-white'>
+                        <Link to='/popular'>Popular
+                        </Link>
+                    </li>
                 </ul>
             </div>
             <div className=' hidden md:flex text-gray-400'>
