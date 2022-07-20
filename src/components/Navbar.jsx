@@ -1,17 +1,27 @@
 import React from 'react'
 import { BsSearch, BsGift, BsBell, BsMenuDown } from 'react-icons/bs'
 
+import { Link } from 'react-router-dom';
+
+
 
 const Navbar = () => {
     return (
         <div className='flex items-center p-4 z-[100] w-full justify-start absolute bg-black'>
-            <h1 className='text-red-600 text-3xl font-bold mx-8 cursor-pointer'>
-                NETFLIX
-            </h1>
+            <Link to='/'>
+                <h1 className='text-red-600 text-3xl font-bold mx-8 cursor-pointer'>
+                    NETFLIX
+                </h1>
+            </Link>
             <div>
+
                 <ul className='text-gray-400 flex '>
-                    <li className='mx-4 hover:text-white'>Home</li>
-                    <li className='mx-4 hover:text-white'>TV Shows</li>
+                    <Link to='/'>
+                        <li className='mx-4 hover:text-white'>Home</li>
+                    </Link>
+                    <Link to='tvshows'>
+                        <li className='mx-4 hover:text-white'>TV Shows</li>
+                    </Link>
                     <li className='mx-4 hover:text-white'>Movies</li>
                     <li className='mx-4 hover:text-white'>Popular</li>
                 </ul>
