@@ -32,7 +32,6 @@ const Navbar = () => {
                 <BsBell className='absolute right-[220px] hover:text-white ' />
                 <BsMenuDown className='absolute right-[180px] hover:text-white' />
             </div>
-
         </div>
     )
 }
