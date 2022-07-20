@@ -2,7 +2,7 @@ import React from 'react'
 import MovieRow from '../components/MovieRow'
 import requests from '../requests'
 
-const TvShows = () => {
+const Movies = () => {
     return (
         <>
             <MovieRow rowID='1' title='Top Rated' fetchURL={requests.requestTopRated} />
@@ -14,4 +14,4 @@ const TvShows = () => {
     )
 }
 
-export default TvShows
+export default Movies

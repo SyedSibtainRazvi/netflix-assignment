@@ -24,9 +24,9 @@ const Hero = () => {
 
     return (
         <>
-            <div className='w-full h-[600px] text-white'>
+            <div className='w-full h-[90vh] text-white'>
                 <div className='w-full h-full'>
-                    <div className='w-full absolute h-[600px] bg-gradient-to-r from-black'></div>
+                    <div className='w-full absolute h-[90vh] bg-gradient-to-r from-black'></div>
                     <img className='w-full h-full object-cover'
                         src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`} alt={movie?.title} />
                     <div className='absolute w-full top-[20%] p-4 md:p-8'>

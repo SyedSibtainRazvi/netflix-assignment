@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <div className='flex items-center p-4 z-[100] w-full justify-start absolute bg-black'>
+        <div className=' sticky flex items-center p-4 z-[100] w-full justify-start bg-black'>
             <Link to='/'>
                 <h1 className='text-red-600 text-3xl font-bold mx-8 cursor-pointer'>
                     NETFLIX
@@ -19,10 +19,10 @@ const Navbar = () => {
                     <Link to='/'>
                         <li className='mx-4 hover:text-white'>Home</li>
                     </Link>
-                    <Link to='tvshows'>
-                        <li className='mx-4 hover:text-white'>TV Shows</li>
+                    <Link to='movies'>
+                        <li className='mx-4 hover:text-white'>Movies</li>
                     </Link>
-                    <li className='mx-4 hover:text-white'>Movies</li>
+                    <li className='mx-4 hover:text-white'>Tv Shows</li>
                     <li className='mx-4 hover:text-white'>Popular</li>
                 </ul>
             </div>

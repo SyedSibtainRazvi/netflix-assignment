@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Home from './Pages/Home';
 
 import { Routes, Route } from 'react-router-dom'
-import TvShows from './Pages/TvShows';
+import Movies from './Pages/Movies';
 
 
 
@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path= '/tvshows' element = {<TvShows />} />
+        <Route path= '/movies' element = {<Movies />} />
       </Routes>
     </>
   );
