@@ -2,20 +2,17 @@ import React from 'react'
 import { BsSearch, BsGift, BsBell, BsMenuDown } from 'react-icons/bs'
 
 import { Link } from 'react-router-dom';
-
-
-
 const Navbar = () => {
     return (
+        <>
         <div className=' sticky flex items-center p-4 z-[100] w-full justify-start bg-black'>
             <Link to='/'>
                 <h1 className='text-red-600 text-3xl font-bold mx-8 cursor-pointer'>
                     NETFLIX
                 </h1>
-            </Link>
+            </Link> 
             <div>
-
-                <ul className='text-gray-400 flex '>
+               <ul className='text-gray-400 flex '>
                     <li className='mx-4 hover:text-white'>
                         <Link
                             to='/'
@@ -45,6 +42,7 @@ const Navbar = () => {
                 <BsMenuDown className='absolute right-[180px] hover:text-white' />
             </div>
         </div>
+        </>
     )
 }
 

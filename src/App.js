@@ -1,24 +1,14 @@
-import './App.css';
-import Navbar from './components/Navbar';
-import Home from './Pages/Home';
-
-import { Routes, Route } from 'react-router-dom'
-import Movies from './Pages/Movies';
-import TvShows from './Pages/TvShows';
-
-
+import Footer from "./components/common/Footer";
+import Navbar from "./components/common/Navbar";
+import AnimatedRoutes from "./Pages/AnimatedRoutes";
 
 function App() {
   return (
-    <>
+    <div className="App">
       <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/movies' element={<Movies />} />
-        <Route path= '/tvshows' element={<TvShows />}/>
-        <Route path= '/popular' />
-      </Routes>
-    </>
+      <AnimatedRoutes />
+      <Footer />
+    </div>
   );
 }
 

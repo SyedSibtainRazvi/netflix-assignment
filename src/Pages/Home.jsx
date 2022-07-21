@@ -1,13 +1,14 @@
-import React from 'react'
-import Hero from '../components/Hero'
-
+import React, { Fragment } from 'react'
+import MovieRow from '../components/MovieRow'
+import Requests from '../requests'
 
 const Home = () => {
-    return (
-        <div>
-            <Hero />
-        </div>
-    )
+  return (
+    <Fragment>
+      <MovieRow rowID='1' title='Trending' fetchURL={Requests.requestTrending} />
+      <MovieRow rowID='2' title='Top Rated' fetchURL={Requests.requestTopRated} />
+    </Fragment>
+  )
 }
 
 export default Home
