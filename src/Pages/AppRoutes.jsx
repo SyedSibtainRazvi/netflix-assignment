@@ -9,7 +9,7 @@ import { Routes, Route } from "react-router-dom";
 import Movie from "./Movie";
 import TvShow from "./TvShow";
 
-const AnimatedRoutes = () => {
+const AppRoutes = () => {
   const banner = useSelector(BannerState);
 
  
@@ -30,4 +30,4 @@ const AnimatedRoutes = () => {
   );
 };
 
-export default AnimatedRoutes;
+export default AppRoutes;

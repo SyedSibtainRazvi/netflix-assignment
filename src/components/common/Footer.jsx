@@ -1,28 +1,22 @@
 import React from "react";
 const Footer = () => {
-  
-  return (
-    <div>
-      <div className="ul_wrapper max-w-[1000px] mx-auto">
-        <h1 className="text-[16px] mb-5">Questions? Contact us.</h1>
-
-        <ul className="text-gray-300 flex">
-          <li>Gift Cards</li>
-          <li>Terms of Use</li>
-          <li>Corporate Information</li>
-          <li>Audio Description</li>
-          <li>Investor Relations</li>
-          <li>Legal Notices</li>
-          <li>Audio and Subtitles</li>
-          <li>Media Center</li>
-          <li>Contact Us</li>
-          <li>Help Center</li>
-          <li>Jobs</li>
-          <li>Cookie Preferences</li>
-        </ul>
+    return (
+        <div className='mt-20'>
+            <hr />
+            <div className='flex items-center p-4 font-thin w-full justify-center text-gray-300 cursor-pointer'>
+                <ul className='flex mt-10'>
+                    <li className='mx-4 hover:text-white'>Audio and Subtitles</li>
+                    <li className='mx-4 hover:text-white'>Media Center</li>
+                    <li className='mx-4 hover:text-white'>Terms of Use</li>
+                    <li className='mx-4 hover:text-white'>Help Center</li>
+                    <li className='mx-4 hover:text-white'>Contact Us</li>
+                </ul>
+            </div>
+            <div className="flex items-center p-4 w-full justify-center text-gray-300">
+                <p>© Netflix India</p>
+            </div>
         </div>
-      </div>
-  )
+    )
 };
 
 export default Footer;

@@ -1,12 +1,12 @@
 import Footer from "./components/common/Footer";
 import Navbar from "./components/common/Navbar";
-import AnimatedRoutes from "./Pages/AnimatedRoutes";
+import AppRoutes from "./Pages/AppRoutes";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <AnimatedRoutes />
+      <AppRoutes />
       <Footer />
     </div>
   );

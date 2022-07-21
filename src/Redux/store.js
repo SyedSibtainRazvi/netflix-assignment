@@ -8,9 +8,7 @@ export default configureStore({
     banner: bannerShow,
   },
 
-  //Included Default Middleware​[fix the bug]
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
-      serializableCheck: false,
     }),
 });
