@@ -1,22 +1,15 @@
-import React, { useEffect } from "react";
-import MovieListing from "../components/TV/MovieListing";
+import React from 'react'
+import MovieRow from '../components/MovieRow'
+import requests from '../requests'
 
-import { useDispatch } from "react-redux";
-import {
-  fetchAsyncMovies,
-  fetchAsyncShows,
-} from "../features/movieSlice";
 const TvShows = () => {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchAsyncMovies());
-    dispatch(fetchAsyncShows());
-  }, [dispatch]);
-  return (
-    <div>
-      <MovieListing />
-    </div>
-  );
-};
+    return (
+        <>
+            <MovieRow rowID='1' title='Top Rated' fetchURL={requests.fetchTvTop} />
+            <MovieRow rowID='2' title='Airing Today' fetchURL={requests.fetchTvAiring} />
+            <MovieRow rowID='3' title='Popular' fetchURL={requests.fetchTvPopular} />
+        </>
+    )
+}
 
-export default TvShows;
+export default TvShows

@@ -23,13 +23,13 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li className='mx-4 hover:text-white'>
-                        <Link to='movies'
+                        <Link to='/movies'
                         > Movies
                         </Link>
                     </li>
                     <li className='mx-4 hover:text-white'>
-                        <Link to='tvshow'>
-                        </Link> TV Shows
+                        <Link to='/tvshows'>Tv Shows
+                        </Link> 
                     </li>
 
                     <li className='mx-4 hover:text-white'>
