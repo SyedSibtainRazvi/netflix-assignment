@@ -1,37 +1,50 @@
 import React from 'react'
 import { BsGift, BsBell, BsMenuDown } from 'react-icons/bs'
 
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 const Navbar = () => {
+    const activeStyle = {
+        textDecoration: "underline",
+    };
     return (
         <>
             <div className='flex items-center p-4 z-[100] w-full justify-start bg-black'>
-                <Link to='/'>
+                <NavLink to='/'>
                     <h1 className='text-red-600 text-3xl font-bold mx-8 cursor-pointer'>
                         NETFLIX
                     </h1>
-                </Link>
+                </NavLink>
                 <div>
                     <ul className='text-gray-400 flex '>
                         <li className='mx-4 hover:text-white'>
-                            <Link
+                            <NavLink
                                 to='/'
-                            > Home
-                            </Link>
+                                style={({ isActive }) =>
+                                    isActive ? activeStyle : undefined
+                                }> Home
+                            </NavLink>
                         </li>
                         <li className='mx-4 hover:text-white'>
-                            <Link to='/movies'
-                            > Movies
-                            </Link>
+                            <NavLink to='/movies'
+                                style={({ isActive }) =>
+                                    isActive ? activeStyle : undefined
+                                }> Movies
+                            </NavLink>
                         </li>
                         <li className='mx-4 hover:text-white'>
-                            <Link to='/tvshows'>Tv Shows
-                            </Link>
+                            <NavLink to='/tvshows'
+                                style={({ isActive }) =>
+                                    isActive ? activeStyle : undefined
+                                }> Tv Shows
+                            </NavLink>
                         </li>
 
                         <li className='mx-4 hover:text-white'>
-                            <Link to='/popular'>Popular
-                            </Link>
+                            <NavLink to='/popular'
+                                style={({ isActive }) =>
+                                    isActive ? activeStyle : undefined
+                                }> Popular
+                            </NavLink>
                         </li>
                     </ul>
                 </div>

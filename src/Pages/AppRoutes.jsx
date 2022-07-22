@@ -12,8 +12,6 @@ import TvShow from "./TvShow";
 const AppRoutes = () => {
   const banner = useSelector(BannerState);
 
- 
-
   return (
     <>
       {banner && (
