@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 
 const Movie = ({ item }) => {
   return (
-    <>
+    <Fragment>
       <div className='w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2'>
         <img
           className='w-full h-auto block'
@@ -15,7 +15,7 @@ const Movie = ({ item }) => {
           </p>
         </div>
       </div>
-    </>
+    </Fragment>
   );
 };
 

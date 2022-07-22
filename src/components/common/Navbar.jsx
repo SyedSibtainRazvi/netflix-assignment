@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { BsGift, BsBell, BsMenuDown } from 'react-icons/bs'
 
 import { NavLink } from 'react-router-dom';
@@ -7,7 +7,7 @@ const Navbar = () => {
         textDecoration: "underline",
     };
     return (
-        <>
+        <Fragment>
             <div className='flex items-center p-4 z-[100] w-full justify-start bg-black'>
                 <NavLink to='/'>
                     <h1 className='text-red-600 text-3xl font-bold mx-8 cursor-pointer'>
@@ -54,7 +54,7 @@ const Navbar = () => {
                     <BsMenuDown className='absolute right-[180px] hover:text-white' />
                 </div>
             </div>
-        </>
+        </Fragment>
     )
 }
 

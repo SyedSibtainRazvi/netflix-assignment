@@ -25,7 +25,6 @@ const MovieRow = ({ title, fetchURL, rowID }) => {
                     </div>
                 </div>
             </div>
-
         </Fragment>
     );
 };
