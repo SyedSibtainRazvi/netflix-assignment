@@ -1,28 +1,22 @@
-import { useSelector } from "react-redux";
-
-
+import React from "react";
 import Banner from "../components/common/Banner";
 
-import { BannerState } from "../Redux/Reducers/bannerShow";
 import Home from "./Home";
 import { Routes, Route } from "react-router-dom";
 import Movie from "./Movie";
 import TvShow from "./TvShow";
+import Popular from "./Popular";
 
 const AppRoutes = () => {
-  const banner = useSelector(BannerState);
 
   return (
     <>
-      {banner && (
-        <div>
-          <Banner />
-        </div>
-      )}
+      <Banner />
       <Routes>
       <Route path="/" element={<Home />}/>
       <Route path="/movies" element={<Movie/>}/>
       <Route path="/tvshows" element={<TvShow/>}/>
+      <Route path="/popular" element={<Popular/>}/>
      </Routes>
     </>
   );
