@@ -3,6 +3,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import baseURL from "../../Api/baseURL";
 import Requests from "../../requests";
 
+
 export const fetchNetflixOriginals = createAsyncThunk(
   "randomposter/fetchTrending",
   async () => {
@@ -26,6 +27,21 @@ const moviesSlice = createSlice({
     },
   },
 });
+
+// const moviesSlice = createSlice({
+//   name: 'movies',
+//   initialState,
+//   extraReducers: builder => {
+//     builder.addCase(fetchNetflixOriginals.pending, state => {
+//       state.loading = true
+//     })
+//     builder.addCase(fetchNetflixOriginals.fulfilled, (state, action) => {
+//       state.loading = false
+//       state.NetflixOriginals = action.payload
+//     })
+//   }
+// })
+  
 
 export default moviesSlice.reducer;
 

@@ -5,8 +5,4 @@ export default configureStore({
   reducer: {
     movie: moviesSlice,
   },
-
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({
-    }),
 });
